@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokédex</title>
+  <!-- <link rel="stylesheet" href="./css/styles.css"> -->
+  <link rel="stylesheet" href="./css/estilos.css">
+</head>
+
+<body>
+  <main>
+    <header>
+      <img src="./img/logo.png" alt="Logo de la Pokédex">
+    </header>
+    <div class="container">
+      <h1>Buscador de Pokémon</h1>
+      <div class="buscador">
+        <input type="text" id="searchInput" placeholder="Escribe el nombre del Pokémon">
+        <button onclick="buscarPokemon()">Buscar</button>
+      </div>
+
+      <div id="gifDeCarga" class="loader">
+        <!-- Aquí se agregará el gif de pikachu -->
+        <img src="./img/pikachu-running.gif" alt="loading Pikachu">
+      </div>
+
+
+      <section id="cardsSection" class="contSection">
+
+
+
+        <!-- Aquí se agregarán las tarjetas de los Pokémon por JavaScript -->
+
+      </section>
+
+    </div>
+
+    <footer>
+      <p>&copy; 2024 Pokédex App</p>
+    </footer>
+  </main>
+  <script src="./js/main.js"></script>
+  <!-- <script src="./js/pokedex.js"></script> -->
+</body>
+
+</html>

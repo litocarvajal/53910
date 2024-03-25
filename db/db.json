@@ -1,0 +1,192 @@
+[
+    {
+      "nombre": "Abra",
+      "tipo": "Psiquico",
+      "ataque": 20,
+      "hp": 25,
+      "imagen": "./img/abra.png"
+    },
+    {
+      "nombre": "Bulbasaur",
+      "tipo": "Planta-Veneno",
+      "ataque": 49,
+      "hp": 45,
+      "imagen": "./img/bulbasaur.png"
+    },
+    {
+      "nombre": "Charmander",
+      "tipo": "Fuego",
+      "ataque": 52,
+      "hp": 39,
+      "imagen": "./img/charmander.png"
+    },
+    {
+      "nombre": "Diglett",
+      "tipo": "Tierra",
+      "ataque": 55,
+      "hp": 10,
+      "imagen": "./img/diglett.png"
+    },
+    {
+      "nombre": "Eevee",
+      "tipo": "Normal",
+      "ataque": 55,
+      "hp": 55,
+      "imagen": "./img/eevee.png"
+    },
+    {
+      "nombre": "Farfetch'd",
+      "tipo": "Normal-Volador",
+      "ataque": 65,
+      "hp": 52,
+      "imagen": "./img/farfetch'd.png"
+    },
+    {
+      "nombre": "Gastly",
+      "tipo": "Fantasma-Veneno",
+      "ataque": 35,
+      "hp": 30,
+      "imagen": "./img/gastly.png"
+    },
+    {
+      "nombre": "Hitmonlee",
+      "tipo": "Lucha",
+      "ataque": 120,
+      "hp": 50,
+      "imagen": "./img/hitmonlee.png"
+    },
+    {
+      "nombre": "Ivysaur",
+      "tipo": "Planta-Veneno",
+      "ataque": 62,
+      "hp": 60,
+      "imagen": "./img/ivysaur.png"
+    },
+    {
+      "nombre": "Jigglypuff",
+      "tipo": "Normal-Hada",
+      "ataque": 45,
+      "hp": 115,
+      "imagen": "./img/jigglypuff.png"
+    },
+    {
+      "nombre": "Kabuto",
+      "tipo": "Roca-Agua",
+      "ataque": 80,
+      "hp": 30,
+      "imagen": "./img/kabuto.png"
+    },
+    {
+      "nombre": "Lickitung",
+      "tipo": "Normal",
+      "ataque": 55,
+      "hp": 90,
+      "imagen": "./img/lickitung.png"
+    },
+    {
+      "nombre": "Machop",
+      "tipo": "Lucha",
+      "ataque": 80,
+      "hp": 70,
+      "imagen": "./img/machop.png"
+    },
+    {
+      "nombre": "Nidoran♀",
+      "tipo": "Veneno",
+      "ataque": 47,
+      "hp": 55,
+      "imagen": "./img/nidoran.png"
+    },
+    {
+      "nombre": "Oddish",
+      "tipo": "Planta-Veneno",
+      "ataque": 50,
+      "hp": 45,
+      "imagen": "./img/oddish.png"
+    },
+    {
+      "nombre": "Pidgey",
+      "tipo": "Normal-Volador",
+      "ataque": 45,
+      "hp": 40,
+      "imagen": "./img/pidgey.png"
+    },
+    {
+      "nombre": "Pikachu",
+      "tipo": "Electrico",
+      "ataque": 55,
+      "hp": 35,
+      "imagen": "./img/pikachu.png"
+    },
+    {
+      "nombre": "Quilava",
+      "tipo": "Fuego",
+      "ataque": 64,
+      "hp": 58,
+      "imagen": "./img/quilava.png"
+    },
+    {
+      "nombre": "Rattata",
+      "tipo": "Normal",
+      "ataque": 56,
+      "hp": 30,
+      "imagen": "./img/rattata.png"
+    },
+    {
+      "nombre": "Squirtle",
+      "tipo": "Agua",
+      "ataque": 48,
+      "hp": 44,
+      "imagen": "./img/squirtle.png"
+    },
+    {
+      "nombre": "Tauros",
+      "tipo": "Normal",
+      "ataque": 100,
+      "hp": 75,
+      "imagen": "./img/tauros.png"
+    },
+    {
+      "nombre": "Umbreon",
+      "tipo": "Siniestro",
+      "ataque": 65,
+      "hp": 95,
+      "imagen": "./img/umbreon.png"
+    },
+    {
+      "nombre": "Vileplume",
+      "tipo": "Planta-Veneno",
+      "ataque": 80,
+      "hp": 75,
+      "imagen": "./img/vileplume.png"
+    },
+    {
+      "nombre": "Wartortle",
+      "tipo": "Agua",
+      "ataque": 63,
+      "hp": 59,
+      "imagen": "./img/wartortle.png"
+    },
+    {
+      "nombre": "Xatu",
+      "tipo": "Psiquico-Volador",
+      "ataque": 75,
+      "hp": 65,
+      "imagen": "./img/xatu.png"
+    },
+    {
+      "nombre": "Yanma",
+      "tipo": "Bicho-Volador",
+      "ataque": 65,
+      "hp": 65,
+      "imagen": "./img/yanma.png"
+    },
+    {
+      "nombre": "Zapdos",
+      "tipo": "Electrico-Volador",
+      "ataque": 90,
+      "hp": 90,
+      "imagen": "./img/zapdos.png"
+    }
+  ]
+  

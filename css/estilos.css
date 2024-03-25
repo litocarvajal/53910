@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-family: "Oswald", sans-serif;
+    color:  #343434;
+}
+
+h1{
+  font-size:2em;
+}
+
+h2{
+  font-size: 1.8em;
+}
+
+h3{
+  font-size: 1.6em;
+}
+
+h4{
+  font-size: 1.4em;
+}
+
+h5{
+  font-size: 1.2em;
+}
+
+h6{
+  font-size: 1.125em;
+}
+
+p{
+  font-size: 1em;
+}
+
+main {
+    overflow: hidden;
+    min-height: 100vh; /* Cambiado a altura mínima del viewport */
+    display: grid;
+    grid-template-areas:
+        "encabezado"
+        "contenido"
+        "pie";
+    grid-template-columns: auto;
+    grid-template-rows: auto 1fr auto; /* Cambiado para que el contenido ocupe el espacio restante */
+    justify-items: center;
+}
+
+main header {
+    width: 100%;
+    grid-area: encabezado;
+    padding: 1em;
+    top: 0;
+    position: sticky;
+    background-color: #DE1337;
+}
+
+main header img {
+  padding: 0 1em;
+    height: 100px;
+}
+
+
+.container {
+  width: 90%;
+    grid-area: contenido;
+    display: grid;
+    grid-template-areas:
+        "titulo"
+        "buscador"
+        "cartas";
+    grid-template-columns: auto;
+    grid-template-rows: min-content min-content 1fr; /* Cambiado para que las filas se ajusten al contenido y la última ocupe el espacio restante */
+    align-items: center; /* Cambiado para centrar verticalmente */
+    justify-items: center;
+}
+
+.container h1 {
+    grid-area: titulo;
+    width: 100%; /* Cambiado para que ocupe todo el ancho disponible */
+    padding: 1em;
+    text-align: center; /* Cambiado para centrar horizontalmente */
+}
+
+.container .buscador {
+    grid-area: buscador;
+    gap: 0.5em;
+    width: 100%; /* Cambiado para que ocupe todo el ancho disponible */
+    display: flex;
+    flex-direction: row; /* Cambiado para que los elementos se alineen en fila */
+    justify-content: center; /* Cambiado para centrar horizontalmente */
+    align-items: center; /* Cambiado para centrar verticalmente */
+    padding: 1em;
+    margin: 0.5em 0;
+}
+
+.container .buscador input[type="text"] {
+    padding: 10px; /* Añade relleno alrededor del campo de entrada */
+    border-radius: 1.8em; /* Añade bordes redondeados al campo de entrada */
+    border: 1px solid #ccc; /* Añade un borde sólido con color gris claro */
+    margin-right: 10px; /* Margen derecho para separar del botón */
+    width: 250px; /* Ancho del campo de entrada */
+    text-align: center;
+}
+
+
+.container  .buscador button {
+    padding: 10px 20px; /* Añade relleno alrededor del botón */
+    border-radius: 1.8em; /* Añade bordes redondeados al botón */
+    background-color: #3A5DA8; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    border: none; /* Elimina el borde del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+/* Estilos para el botón al pasar el cursor */
+.container .buscador button:hover {
+    background-color: #1D2C5E; /* Cambia el color de fondo del botón al pasar el cursor */
+}
+
+
+
+.container .loader {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+}
+
+.container .loader img{
+    width: 6em;
+    height: auto;
+}
+
+
+.contSection {
+    margin: 0.5em 2em;
+    grid-area: cartas;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+.contSection .card {
+    border-radius: 0.8em;
+    margin: 1em;
+    gap: 1em;
+    border: 0.8em solid;
+    border-color: #FFCB05;
+    background-image: url('../img/textura.jpg');
+    background-blend-mode:multiply;
+    width: 300px;
+    padding: 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s;
+}
+
+.contSection .card:hover {
+    transform: perspective(1000px) rotateY(-4deg);
+    box-shadow: 8px 8px 12px -12px rgba(0,0,0,1);
+}
+
+
+/* Estilos para h2 y p que se asemejen a una tarjeta Pokémon */
+
+.contSection .card h2 {
+    /*font-size: 1.5em;   */
+    padding-bottom: 0.5em;
+}
+
+.contSection .card p {
+    margin-bottom: 0.2em; /* 2 */
+    /* font-size: 0.9em;  */
+}
+
+
+.container .card div {
+    margin-bottom: 0.5em;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 90%;
+    height: 10em;
+    border: 0.4em ridge #FFCB05;
+    box-shadow: 8px 8px 12px -12px rgba(0,0,0,1);
+    display: flex; /* Utiliza flexbox para centrar la imagen */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+}
+
+.container .card div img {
+    max-width: 100%; /* Ajusta la imagen al ancho máximo del contenedor */
+    max-height: 136%; /* Ajusta la imagen a la altura máxima del contenedor */
+}
+
+footer {
+    grid-area: pie;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky; /* Cambiado a sticky para que el pie se quede en su lugar */
+    bottom: 0;
+    width: 100%;
+    background-color: #343434;
+    z-index: 1; /* Añadido un índice z para asegurar que esté encima del contenido */
+}
+
+footer p{
+    color: #FFFFFF;
+}
+
+
+
+
+/* colores card*/
+/* CSS para colores claros */
+
+/* Psíquico */
+.psiquico {
+    background-color: #E6E6FA; /* Lavender */
+  }
+  
+  /* Planta-Veneno */
+  .planta-veneno {
+    background-color: #98FB98; /* Pale Green */
+  }
+  
+  /* Fuego */
+  .fuego {
+    background-color: #FFDAB9; /* Peach Puff */
+  }
+  
+  /* Tierra */
+  .tierra {
+    background-color: #FFE4B5; /* Moccasin */
+  }
+  
+  /* Normal */
+  .normal {
+    background-color: #F5F5F5; /* White Smoke */
+  }
+  
+  /* Normal-Volador */
+  .normal-volador {
+    background-color: #87CEFA; /* Light Sky Blue */
+  }
+  
+  /* Fantasma-Veneno */
+  .fantasma-veneno {
+    background-color: #D8BFD8; /* Thistle */
+  }
+  
+  /* Lucha */
+  .lucha {
+    background-color: #FFA07A; /* Light Salmon */
+  }
+  
+  /* Roca-Agua */
+  .roca-agua {
+    background-color: #AFEEEE; /* Pale Turquoise */
+  }
+  
+  /* Normal-Hada */
+  .normal-hada {
+    background-color: #FFB6C1; /* Light Pink */
+  }
+  
+  /* Veneno */
+  .veneno {
+    background-color: #DDA0DD; /* Plum */
+  }
+  
+  /* Eléctrico */
+  .electrico {
+    background-color: #F0E68C; /* Khaki */
+  }
+  
+  /* Agua */
+  .agua {
+    background-color: #ADD8E6; /* Light Blue */
+  }
+  
+  /* Siniestro */
+  .siniestro {
+    background-color: #C0C0C0; /* Silver */
+  }
+  
+  /* Psíquico-Volador */
+  .psiquico-volador {
+    background-color: #B0E0E6; /* Powder Blue */
+  }
+  
+  /* Bicho-Volador */
+  .bicho-volador {
+    background-color: #90EE90; /* Light Green */
+  }
+  
+  /* Eléctrico-Volador */
+  .electrico-volador {
+    background-color: #00BFFF; /* Deep Sky Blue */
+  }
+  
