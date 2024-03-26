@@ -59,7 +59,7 @@ main header {
     top: 0;
     position: sticky;
     background-color: #DE1337;
-    border-bottom: #000 4px solid;
+    border-bottom: #343434 8px solid;
 }
 
 main header img {
@@ -69,15 +69,13 @@ main header img {
 
  main .pokeball{
   position: relative;
-  top: -32px;
+  background-color: #fff;
+  top: -50px;
   grid-area: pokeball;
-  height: 60px;
-  width: auto;
- }
-
- main .pokeball img{
-  height: 100%;
-  width: auto;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  border: #343434 8px solid;
  }
 
 .container {
